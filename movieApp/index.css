@@ -1,0 +1,100 @@
+
+        body{
+            background-color: rgb(26, 26, 26);
+        }
+        #container{
+            width:90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+        }
+        #searchbar{
+            width:40%;
+            margin:auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+        }
+        #search{
+            width:100%;
+            border-radius: 5px;
+            padding:6px 15px;
+            font-size: 16px;
+            
+        }
+       button{
+            margin-top: 30px;
+            width:70%;
+           padding:4px 10px;
+           border-radius: 5px;
+           font-size: 18px;
+           background-color: rgb(4, 144, 236);
+           border: 0.5px solid grey;
+           color: rgb(5, 5, 5);
+        }
+        button:hover{
+            cursor: pointer;
+            color: white;
+        }
+
+        #searchbar>div{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap:10px;
+            
+        }
+        #movies{
+            box-shadow: rgba(255, 248, 248, 0.24) 0px 3px 8px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+            color: white;
+        }
+        #searchbar>h1{
+            text-align: center;
+            color:crimson;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        select{
+            padding: 6px;
+            border-radius: 5px;
+            background-color: rgb(4, 144, 236);
+            color: rgb(0, 0, 0);
+            margin-top: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #yr{
+            padding: 5px 2px;
+            font-size: 15px;
+            border-radius: 5px;
+            
+        }
+        #old{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+        }
+
+        @media all and (min-width:300px) and (max-width:480px){
+            #container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            #searchbar{
+                width:90%;
+                
+               
+            }
+            #old{
+                width:50%;
+            }
+            p{
+                font-size: 5px;
+            }
+            button{
+                padding: 0px;
+                font-size: 15px;
+            }
+
+        }
